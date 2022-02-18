@@ -57,3 +57,7 @@ personajes[`nivel`] = 1;
 console.log(personajes);
 
 document.getElementById("salida").innerHTML = "Aquí van las salidas del laboratorio";
+
+function newFunction() {
+    saltar();
+}
