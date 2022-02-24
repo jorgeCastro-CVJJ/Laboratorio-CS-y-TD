@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Lab4 Ejercicios de JS</title>
+</head>
+<body>
+    <h1>Lab 4 Ejercicios de JS</h1>
+    <section> 
+        <article>
+            Ejercicio 1
+            <details>
+                <summary>
+                    Entrada: un número pedido con un prompt. 
+                    Salida: Una tabla con los números del 1 al número dado con sus cuadrados y 
+                    cubos. Utiliza document.write para producir la salida 
+                </summary>
+                <button onclick="potencias()"> Resultado </button>
+                <p id="potencias"></p>
+               
+            </details>
+            Ejercicio 2
+            <details> 
+                <summary>
+                    Entrada: Usando un prompt se pide el resultado de la suma de 2 números 
+                    generados de manera aleatoria. Salida: La página debe indicar si el resultado 
+                    fue correcto o incorrecto, y el tiempo que tardó el usuario en escribir la respuesta
+                </summary>
+                <button onclick="resultado_prompt()"> Resultado </button>
+                <p id="instruccion"></p>
+                <p id="resultado_prompt"></p>
+            </details>
+            Ejercicio 3
+            <details> 
+                <summary>
+                    Función: contador. Parámetros: Un arreglo de números. 
+                    Regresa: La cantidad de números negativos en el arreglo, la cantidad de 0's, y 
+                    la cantidad de valores mayores a 0 en el arreglo.
+                </summary>
+                <button onclick="contador(array)"> Resultado </button>
+                <p id="arreglo"></p>
+                <p id="contador"></p>
+            </details>
+            Ejercicio 4
+            <details> 
+                <summary>
+                    Función: promedios. Parámetros: Un arreglo de arreglos de números. 
+                    Regresa: Un arreglo con los promedios de cada uno de los renglones de la matriz.
+                </summary>
+                <button onclick="promedios()"> Resultado </button>
+                <p id=""></p>
+                <p id="promedios"></p>
+            </details>
+            
+        </article>
+    </section>
+   
+
+    <script src="lab4.js"></script>
+    <!--- <script>
+
+        var xValues = [];
+        var yValues = [];
+    
+        function generateData(value, i1, i2, step = 1) {
+              for (let x = i1; x <= i2; x += step) {
+            yValues.push(eval(value));
+            xValues.push(x);
+          }
+        }
+        generateData("Math.sin(x)",0,10,0.5);
+        new Chart("myChart", {
+          type: "line",
+          data: {
+            labels: xValues,
+            datasets: [{
+              fill: false,
+              pointRadius: 0,
+              borderColor: "rgba(0,0,255,0.5)",
+              data: yValues
+            }]
+          },   
+          options: {
+            scales: {
+                xAxes: [{
+                    ticks: {
+                        display: false //this will remove only the label
+                    }
+                }]
+            },
+            title: {
+              display: true,
+              text: "y = sin(x)",
+              fontSize: 16
+            },
+            legend: {
+                display:false
+            }
+         } 
+          
+        });
+    
+    </script> -->
+</body>
+</html>
