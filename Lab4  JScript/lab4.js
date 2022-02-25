@@ -9,7 +9,7 @@ function potencias() {
         str = "";
         for (let i = 0; i < num; i++) {
             cuadrado = (i + 1) * (i + 1);
-            ubo = (i + 1) * (i + 1) * (i + 1);
+            cubo = (i + 1) * (i + 1) * (i + 1);
             str = str + `${i+1}.- Su cuadrado es: ${cuadrado}  |  Su cubo es: ${cubo} <br>`
             }
     document.getElementById("potencias").innerHTML = str;  
