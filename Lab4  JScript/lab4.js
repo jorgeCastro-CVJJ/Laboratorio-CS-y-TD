@@ -80,10 +80,18 @@ function contador(array){
 */
 const arrayOfArrays = [[10,3,4,2,6,8],[3,7,1,77,34,5],[90,23,5,2,6,3],[83,45,23,4,12,85],[43,12,22,61,7,9]]
 function promedios() {
-    
-    for (let i = 0; i < arrayOfArrays.length;i++){
-        for (let j = 0; i < arrayOfArrays[i].length; j++){
-            suma = arrayOfArrays[i][j];
+    let i = 0;
+    let suma = 0;
+    let index = arrayOfArrays[i];
+    let str = "";
+    for (i; i < arrayOfArrays.length;i++){
+        for (let j = 0; j < index.length; j++){
+            suma = suma + index[j];
         }
+        promedio = suma/index.length;
+        console.log(i+1);
+        str = str + `La fila numero ${i+1} tiene un promedio de: ${promedio} <br>`
     }
+    document.getElementById("promedios").innerHTML = str;
+    
 }

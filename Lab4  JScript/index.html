@@ -20,7 +20,6 @@
                 </summary>
                 <button onclick="potencias()"> Resultado </button>
                 <p id="potencias"></p>
-        
             </details>
             Ejercicio 2
             <details> 
@@ -51,58 +50,55 @@
                     Regresa: Un arreglo con los promedios de cada uno de los renglones de la matriz.
                 </summary>
                 <button onclick="promedios()"> Resultado </button>
-                <p id=""></p>
                 <p id="promedios"></p>
             </details>
-            
         </article>
     </section>
-   
-
+    <br>
+    <section>
+        Esta sección es responder a las preguntas <br>
+        <details>
+            <summary>
+                ¿Qué diferencias y semejanzas hay entre Java y JavaScript?
+            </summary>
+            <p> Java es un lenguaje orientado a objetos, mientras que JavaScript es un lenguaje orientado a eventos</p>
+        </details>
+        <details>
+            <summary>
+                ¿Qué métodos tiene el objeto Date? (Menciona al menos 5*)    
+            </summary>
+            <p> getFullYear()	Get the year as a four digit number (yyyy)
+                getMonth()	Get the month as a number (0-11)
+                getDate()	Get the day as a number (1-31)
+                getHours()	Get the hour (0-23)
+                getMinutes()	Get the minute (0-59)
+                getSeconds()	Get the second (0-59)
+                getMilliseconds()	Get the millisecond (0-999)
+                getTime()	Get the time (milliseconds since January 1, 1970)
+                getDay()	Get the weekday as a number (0-6)
+                Date.now()
+            </p>
+        </details>
+        <details>
+            <summary>
+                ¿Qué métodos tienen los arreglos? (Menciona al menos 5*)
+            </summary>
+            <p> lenght(), pop(), push(), delete(), splice()</p>
+        </details>
+        <details>
+            <summary>
+                ¿Cómo se declara una variable con alcance local dentro de una función?
+            </summary>
+            <p>En JavaScript se ocupa la palabra reservada "let"</p>
+        </details>
+        <details>
+            <summary>
+                ¿Qué implicaciones tiene utilizar variables globales dentro de funciones?
+            </summary>
+            <p> al momento de desplegar la página web pueden llegar a modificar valores del archivo. 
+                Ello permite que sea una página vulnerable y en el peor de los casos entrar a información privada.</p>
+        </details>
+    </section>
     <script src="lab4.js"></script>
-    <!--- <script>
-
-        var xValues = [];
-        var yValues = [];
-    
-        function generateData(value, i1, i2, step = 1) {
-              for (let x = i1; x <= i2; x += step) {
-            yValues.push(eval(value));
-            xValues.push(x);
-          }
-        }
-        generateData("Math.sin(x)",0,10,0.5);
-        new Chart("myChart", {
-          type: "line",
-          data: {
-            labels: xValues,
-            datasets: [{
-              fill: false,
-              pointRadius: 0,
-              borderColor: "rgba(0,0,255,0.5)",
-              data: yValues
-            }]
-          },   
-          options: {
-            scales: {
-                xAxes: [{
-                    ticks: {
-                        display: false //this will remove only the label
-                    }
-                }]
-            },
-            title: {
-              display: true,
-              text: "y = sin(x)",
-              fontSize: 16
-            },
-            legend: {
-                display:false
-            }
-         } 
-          
-        });
-    
-    </script> -->
-</body>
+    </body>
 </html>
