@@ -1,0 +1,26 @@
+{
+  "name": "spirit",
+  "version": "1.0.0",
+  "description": "Codigo de las sesiones de clase de CS y TD",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jorgeCastro-CVJJ/Laboratorio-CS-y-TD.git"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "CVJJ",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jorgeCastro-CVJJ/Laboratorio-CS-y-TD/issues"
+  },
+  "homepage": "https://github.com/jorgeCastro-CVJJ/Laboratorio-CS-y-TD#readme",
+  "dependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
