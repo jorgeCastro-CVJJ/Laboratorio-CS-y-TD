@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laboratorio 6</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"  media="screen,projection"/>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href= "style.css" rel="stylesheet" type="text/css">
+    
+</head>
+<body>
+  <nav>
+    <div class="nav-wrapper #26a69a teal lighten-1">
+      <a  class="brand-logo"><i class="material-icons">spa</i>Laboratorio 6: Programación orientada a Eventos</a>
+    </div>
+  </nav>
+  <br></br>
+
+  <div class="container ">
+  <ul class="collection">
+    <li class="collection-item avatar #f5f5f5 grey lighten-4">
+      <img src="https://pbs.twimg.com/profile_images/1464285246208229391/SKIBZGAz_400x400.jpg" alt="" class="circle">
+      <span class="title"><h6><b>Tecnológico de Monterrey Campus Querétaro</b></h6></span>
+      <p>Construcción de software y toma de decisiones<br>
+          Grupo 401
+      </p>
+      <a href="#" class="secondary-content"><i class="material-icons">grade</i></a>
+    </li> 
+    <li class="collection-item avatar #f5f5f5 grey lighten-4">
+      <img src="jordywhats.jpg" alt="" class="circle">
+      <span class="title"><h6><b>Jorge de Jesús Castro Vázquez</b></h6></span>
+      <p>A01707735<br>
+          A01707735@tec.mx
+      </p>
+      <a href="#" class="secondary-content"><i class="material-icons">grade</i></a>
+  </ul>
+  </div>
+  
+  <div class="container">
+    <h3 class="header">Preguntas a responder</h3>
+      <div class="row">
+        <div class="col s12 m5 l4">
+          <div class="card-panel #616161 grey darken-2">
+            <span class="white-text">
+              <h6 class = "centrar-texto"><b>¿Por qué es una buena práctica usar JavaScript para checar que sean válidos los inputs de las formas antes de enviar los datos al servidor?</b></h6>
+              <p><DIV id="mitexto1" class = "justificar-texto" STYLE="font-family: Arial;" onmouseover="Llegar(mitexto1);" onmouseout="Salir(mitexto1);">
+                Es una buena práctica debido a que de esta forma, si el usuario ha cometido algún error al rellenar el formulario, se le puede notificar de forma instantánea, sin necesidad de esperar la respuesta del servidor.
+              </p></DIV>
+              </span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12 m5 l4">
+            <div class="card-panel #616161 grey darken-2">
+              <span class="white-text" >
+              <h6 class = "centrar-texto"><b>¿Cómo puedes saltarte la seguridad de validaciones hechas con JavaScript</b></h6>
+              <p><DIV id="mitexto2" class = "justificar-texto" STYLE="font-family: Arial;" onmouseover="Llegar(mitexto2);" onmouseout="Salir(mitexto2);">Colocando <b>novalidate = "" </b> en la parte de la página que requiera  verificación de información para acceder. </p>
+              </DIV>
+              </span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12 m5 l4">
+              <div class="card-panel #616161 grey darken-2">
+                <span class="white-text" >
+                <h6 class = "centrar-texto"><b>Si te puedes saltar la seguridad de las validaciones de JavaScript, entonces ¿por qué la primera pregunta dice que es una buena práctica?</b></h6>
+                <p><DIV id="mitexto3" class = "justificar-texto" STYLE="font-family: Arial;" onmouseover="Llegar(mitexto3);" onmouseout="Salir(mitexto3);">Se dice que es una buena practica porque al saltarte estas validaciones muchas de las funciones de la página dejarían de funcionar, por lo cuál un usuario que realizara esto no tendría el acceso completo a la página.</p>
+              </DIV>
+              </span>
+              </div>
+            </div>
+      </div>
+
+    <!-- Cartas -->
+    </div>
+    
+    <h4 class="centrar-texto">Validador de Contraseñas</h4>
+    <div id="form" onkeypress="enterEnviar(event);">
+      <div id="resultado"></div>  
+      <input type="password" placeholder="Contraseña" id="pass"  onkeyup="return passwordChanged()" >
+      <input type="password" placeholder="Repetir contraseña" id="pass2">
+      <input type="submit" onclick="validarContraseña()" class="waves-effect waves-light btn" value="Verificar">
+      <div class="info">
+        <p class = "info">Pulse ENTER para verificar.</p>
+      </div>
+    </div>
+    <h4 class="centrar-texto">¿Qué tan segura es tu contraseña?</h4>
+    <input name="password" id="password" type="password" size="15" maxlength="100" onkeyup="return passwordChanged()" />
+    <span id="strength">Escribe tu contraseña</span>
+    
+    
+    <br></br>
+      <div class="row">
+        <br></br>
+        <h4 class="centrar-texto">Venta de Calzado</h4>
+        <div class="col s12 m6 l4">
+          <!--Zapatos de vestir-->
+            <div class="card">
+                <div class="card-image">
+                <img src="https://www.beatnikshoes.com/wp-content/uploads/2015/03/28_09_2014-21043a.jpg">
+                <h3 class="card-title #000000 black" style="font-size: 20px">$600</h3>
+                </div>
+                <div class="card-content">
+                <h4 class="centrar-texto">Zapatos de Vestir</h4>
+                <p class="justificar-texto">Este tipo de calzado es perfecto para cualquier ocasión especial donde la vestimenta sea semiformal o formal.<br><br></p>
+            </div>
+                <div class="card-action">
+                    <input value = "0" id="vestir" type="hidden" min="0" max="100" value="1" style="width: 100px; height: 30px">
+                <a id="purchase_vestir" data-name="Zapatos de Vestir" data-price="600"  class="btn tooltipped" data-position="right" data-tooltip="Fino señores. Guiño. Guiño." >Comprar</a>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m6 l4">
+        <!--Botas-->
+          <div class="card">
+              <div class="card-image">
+              <img src="https://i.pinimg.com/originals/e8/50/8d/e8508d81bbe942bd91081fadde659b71.png">
+              <h3 class="card-title #000000 black" style="font-size: 20px">$700</h3>
+              </div>
+              <div class="card-content">
+              <h4 class="centrar-texto">Botas</h4>
+              <p class="justificar-texto"> Para los lluvias, para ir al camp o sencillamente para lucir todoterreno. ¡Un par de Botas es perfecto par ti!<br><br></p>
+          </div>
+              <div class="card-action">
+                  <input value = "0" id="botas" type="hidden" min="0" max="100" style="width: 100px; height: 30px">
+              <a id="purchase_botas" data-name="Botas" data-price="700"  class="btn tooltipped" data-position="right" data-tooltip="Comfy boots, comfy self.">Comprar</a>
+              </div>
+          </div>
+      </div>
+      <div class="col s12 m6 l4">
+        <!--Tennis-->
+        <div class="card">
+            <div class="card-image">
+            <img src="https://i.pinimg.com/736x/64/da/21/64da21d1c81f39e26c6754b5f4edf0cf.jpg">
+            <h3 class="card-title #000000 black" style="font-size: 20px">$500</h3>
+            </div>
+            <div class="card-content">
+            <h4 class="centrar-texto">Tenis</h4>
+            <p class="justificar-texto">Regula la presión arterial y previene la aparición de enfermedades cardiovasculares.
+              Reduce los niveles de colesterol y la probabilidad de padecer alguna enfermedad del corazón.</p>
+        </div>
+            <div class="card-action">
+                <input value = "0" id="tenis" type="hidden" min="0" max="100"  style="width: 100px; height: 30px">
+                <a id="purchase_tenis" data-name="Tenis" data-price="500" class="btn tooltipped" data-position="right" data-tooltip="Tremendo Flow">Comprar</a>
+            </div>
+        </div>
+    </div>
+      </div>
+  
+
+
+            <br></br>
+
+        </div>
+      <h4><i class="material-icons">add_shopping_cart</i>Carrito</h4>
+      <table>
+
+        <tr>
+      
+          <th>Calzado</th>
+      
+          <th>Cantidad</th>
+      
+          <th>Precio</th>
+      
+        </tr>
+
+        </table>
+        <div id="cart_vestir" class="row"></div>
+        <div id="cart_botas" class="row"></div>
+        <div id="cart_tennis" class="row"></div>
+        <!-- <a id="vaciar_car" class="btn">Vaciar Carrito</a> -->
+        <div id="vaciar" class="row"></div>
+
+        <h4><i class="material-icons">attach_money</i>Total</h4>
+        <a id="total_car" class="btn">Calcular total</a>
+        <div id="pago" class="row"></div>
+        </div>
+
+
+
+
+    </div>
+
+  </div>
+  </div>
+  
+  
+
+    <footer class="page-footer #4e342e brown darken-3">
+        <div class="footer-copyright">
+            <div class="container">
+            © 2022 Creado con Materialize <br>
+            Biliografía: <br>
+            <ol>
+              <li>Álvarez, M. (2018, 24 julio). Materialize CSS. Desarrollo Web. Recuperado 20 de febrero de 2022, de <a  target="_blank" href="https://desarrolloweb.com/articulos/materialize-framework-css.html">Desarrollo Web</a></li>
+              <li>Fernández, J. J. (2021, 30 marzo). Materialize, el framework para frontend de Google. tooltyp. Recuperado 20 de febrero de 2022, de <a  target="_blank" href= "https://www.tooltyp.com/materialize-el-framework-para-frontend-de-google/#:%7E:text=Materialize%20es%20el%20framework%20de,dise%C3%B1o%20de%20Google%2C%20sigue%20leyendo%20%E2%80%A6">Tooltyp</a></li>
+            </ol>
+            </div>
+        </div>
+    </footer>
+          
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        M.AutoInit();
+    </script>
+    <script src = "aver.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script> 
+    <script type="text/javascript" src="js/jquery.validate.js"></script>
+</body>
+</html>

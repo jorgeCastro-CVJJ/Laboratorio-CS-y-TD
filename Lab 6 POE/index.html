@@ -1,12 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-MX">
     <head>
-        <title></title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/style.css" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio 6</title>
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" 
+    rel="stylesheet">
+
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"  
+    media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href= "style.css" rel="stylesheet" type="text/css">
+    
     </head>
     <body>
-        <script> src="poe.js" </script>
+
+        <header> Aquí se hace la parte del laboratorio 6 sobre el validador de password</header>
+        <div>
+            <label for="contraseña">Contraseña</label>
+            <input type="password"  id="contraseña"><br>
+            <label for="confirmar">Confirmar</label>
+            <input type="password" id="confirmar">
+        </div>
+        <button onclick="password()">A ver</button>
+            <div id="valor"> 
+            </div>
+        <section>
+            <h2> Aquí se venden cositas</h2>
+            <p> Vendemos Zapatos en Outlets. Conocenos. Amanos. Compra. Repite.</p>
+            <article>
+                <h2> Botas Negras</h2>
+                <img src="https://i.imgur.com/WiffnOl.jpeg" width="500px" height="500px">
+            </article>
+        </section>
+        <section>
+            <article>
+                <h2>Botas Rosas</h2>
+                    <p>Últimos pares!!!! 
+                    </p>
+                <img src="https://i.imgur.com/g2szmDf.jpeg" width="500px" height="500px">
+            </article>
+        </section>
+        <section>
+            <article>
+                <h2> Khazoo!!! </h2>
+                    <p>Zapatos Elegantes, uy uy uy!!!
+
+                    </p>
+                    <button onclick="addOne()">Agregar al carrito</button> <p id="contadorP3">0</p>
+                <img src="https://images.loox.io/uploads/2021/8/29/NJWMMZrWj.jpg" width="500px" height="500px">
+            </article>
+        </section>
+        <section>
+            <h2> Costo total de la compra: </h2> <h3 id="totalCompra">0</h3> MXN
+        </section>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script>
+            M.AutoInit();
+        </script>
+        <script src="poe.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery.min.js"></script> 
+        <script type="text/javascript" src="js/jquery.validate.js"></script>
     </body>
 </html>
